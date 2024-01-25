@@ -1,11 +1,11 @@
+
+"""
 user = {
     "name":"Surajan",
     "age":"18",
     "address":"New Jersey",
     "country":"Space ",
 }
-
-
 print("Full Name Is",user.get("full_name", "No Name"))
 
 
@@ -27,7 +27,7 @@ user["goal"] = "Greatest Of All"
 user.get("name") #=> can return None if key absent
 
 user.get("mother_name", "default value if no key present")
-
+"""
 
 """
 WAP to get name, age, religion, father_name, mother_name, college_name,  
@@ -36,7 +36,7 @@ Declare an empty dict Add these key value pairs to a dictionary
 and print result
 
 """
-attrs = ["name", "age", "religion", "father_name", "mother_name", "college_name"]
+"""attrs = ["name", "age", "religion", "father_name", "mother_name", "college_name"]
 
 user_detail = {}
 
@@ -64,3 +64,32 @@ breakpoint()
         "lon":"90.6466",
     }
 }
+
+"""
+
+user_detail_first = {
+    "name":"Surajan",
+    "age":"18",
+}
+
+user_detail_second = {
+    "address":"New Jersey",
+    "country":"Space ",
+}
+
+# merging two dict
+user_detail = {
+    **user_detail_first, 
+    **user_detail_second,
+    "state":"bagmati"
+}
+# print(user_detail)
+
+# merging two or more lists
+
+student1 = ["SUrajan", "Oscar","Rajan"]
+student2 = ["Ava", "Aashma","Supriya"]
+
+student = [*student1,*student2,"123"]
+
+print(student)
